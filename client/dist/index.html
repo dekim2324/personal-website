@@ -4,9 +4,37 @@
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/4ff72e95e0.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4ff72e95e0.js" ></script>
+
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+        
     </head>
     <body>
+
+
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDhLs842fLL3kQdgsxFfaZg0iV-QtpfutU",
+            authDomain: "personal-website-488d5.firebaseapp.com",
+            databaseURL: "https://personal-website-488d5.firebaseio.com",
+            projectId: "personal-website-488d5",
+            storageBucket: "personal-website-488d5.appspot.com",
+            messagingSenderId: "211728505654",
+            appId: "1:211728505654:web:5ad34494334c67d45bf197"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        
+        </script>
+
         <div id="root"></div>
         <script src='/bundle.js'></script>
     </body>

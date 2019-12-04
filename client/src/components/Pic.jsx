@@ -68,8 +68,8 @@ const dots = {
 }
 
 const pic = {
-    height: '185px',
-    width: '155px',
+    height: '135px',
+    width: '105px',
     borderRadius: '50%',
     boxShadow: '10px 8px 20px -15px #000',
     marginTop: '30px'
