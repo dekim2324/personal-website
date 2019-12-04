@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
 class Pic extends Component{
-    constructor() {
-        super()
+    constructor(props) {
+        super(props);
     }
 
-    handleResume() {
-        // alert('clicked')
+    handleResume(e) {
         window.open('https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/Dennis%20Resume.pdf?alt=media&token=58efae92-9c1d-46d1-8c7d-e9ad3b3b021a', '_blank')
     }
 
@@ -26,9 +25,14 @@ class Pic extends Component{
                     <button 
                     style={button1} 
                     type="button" 
-                    class="btn btn-danger" 
+                    className="btn btn-danger" 
                     onClick={e => this.handleResume(e)}>Resumé</button>
-                    <button type="button" class="btn btn-dark">Email</button>
+
+                    <button 
+                    type="button" 
+                    className="btn btn-dark"
+                    onClick={() => this.props.handleForumChange()}
+                    >Message</button>
                 </div>
             </div>
         )
@@ -39,13 +43,14 @@ const container = {
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#fafafa',
-    height: '400px',
-    fontFamily: `'Varela Round', sans-serif`
+    height: '430px',
+    fontFamily: `'Varela Round', sans-serif`,
+    marginTop: '20px'
 }
 const container2 = {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: '15px'
+    marginTop: '20px'
 }
 const button1 = {
     marginRight: '25px'
