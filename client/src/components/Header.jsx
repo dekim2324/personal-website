@@ -8,8 +8,15 @@ class Header extends Component {
     render() {
         return(
             <div style={style}>
-                <div style={name}>  Hey! 👋 I'm Dennis Kim </div>
-                <div style={title}> Software Engineer </div>
+
+                <div style={name}>Hey! 👋 I'm</div>
+                
+                <div className='animated-text'>    
+                    <div className='line'>Dennis Kim</div>
+                    <div className='line'>a fullstack developer</div>
+                    <div className='line'>a software engineer</div>
+                </div>
+
             </div>
         )
     }
@@ -18,18 +25,15 @@ class Header extends Component {
 const style = {
     backgroundColor: '#fafafa',
     height: '150px',
-    fontFamily: `'Open Sans', sans-serif`,
+    fontFamily: `'Varela Round', sans-serif`,
     textAlign: 'center'
 }
 const name = {
     fontSize: '35px',
     paddingTop: '25px',
-    fontWeight: '540'
+    fontWeight: '540',
+    display: 'inlineBlock'
 }
-const title = {
-    fontSize: '20px',
-    fontWeight: '320',
-    marginTop: '10px'
-}
+
 
 export default Header;
