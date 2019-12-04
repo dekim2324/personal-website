@@ -23,7 +23,7 @@ class Header extends Component {
 }
 
 const style = {
-    backgroundColor: '#fafafa',
+    // backgroundColor: '#fafafa',
     height: '150px',
     fontFamily: `'Varela Round', sans-serif`,
     textAlign: 'center'
