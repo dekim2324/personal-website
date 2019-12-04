@@ -34,6 +34,14 @@ class Pic extends Component{
                     onClick={() => this.props.handleForumChange()}
                     >Message</button>
                 </div>
+
+                <div style={dots}>
+                    <i className="fas fa-circle fa-xs"></i>
+                    <i className="fas fa-circle fa-xs"></i>
+                    <i className="fas fa-circle fa-xs"></i>
+                    <i className="fas fa-circle fa-xs"></i>
+                </div>
+
             </div>
         )
     }
@@ -54,6 +62,9 @@ const container2 = {
 }
 const button1 = {
     marginRight: '25px'
+}
+const dots = {
+    marginTop: '30px'
 }
 
 const pic = {
