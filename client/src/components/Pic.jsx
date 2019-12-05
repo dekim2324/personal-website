@@ -16,7 +16,7 @@ class Pic extends Component{
                     <img style={pic} src="https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/coffeepic.png?alt=media&token=8a81651c-0d50-4b24-acd2-c3455e22b361" />
                 </div>
 
-                <h5 style={location}>Austin, TX | 'Murica</h5>
+                <h5 style={location}>Austin, TX | Dennis Kim</h5>
 
                 <div> Building software is my passion. I am constantly blown away by new technology. </div>
                 <div> Interests in basketball (Dallas Mavericks), cooking, eating fatty foods, and traveling. </div>
@@ -50,21 +50,22 @@ const container = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: '#fafafa',
+    // backgroundColor: '#fafafa',
     height: '430px',
     fontFamily: `'Varela Round', sans-serif`,
-    marginTop: '20px'
+    paddingTop: '20px',
+    color: 'black'
 }
 const container2 = {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: '20px'
+    marginTop: '40px'
 }
 const button1 = {
     marginRight: '25px'
 }
 const dots = {
-    marginTop: '30px'
+    marginTop: '40px'
 }
 
 const pic = {

@@ -1,5 +1,8 @@
 * body {
-    margin: 0
+    margin: 0;
+    /* margin-left:0px;
+    width: 100%;
+    height: 100vh */
   }
 
   .animated-text{
@@ -51,4 +54,10 @@
 
   .fas {
     transform: scale(0.3,0.3)
+  }
+
+  .social {
+    margin-right: 30px;
+    margin-left: 30px;
+    cursor: pointer
   }

@@ -12,7 +12,7 @@ class Header extends Component {
                 <div style={name}>Hey! 👋 I'm</div>
                 
                 <div className='animated-text'>    
-                    <div className='line'>Dennis Kim</div>
+                    <div className='line'>Korean-American</div>
                     <div className='line'>a fullstack developer</div>
                     <div className='line'>a software engineer</div>
                 </div>
@@ -23,8 +23,8 @@ class Header extends Component {
 }
 
 const style = {
-    // backgroundColor: '#fafafa',
-    height: '150px',
+    backgroundColor: 'white',
+    height: '160px',
     fontFamily: `'Varela Round', sans-serif`,
     textAlign: 'center'
 }

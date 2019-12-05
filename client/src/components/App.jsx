@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import Pic from './Pic.jsx';
 import Form from './Form.jsx';
 import SuccessMsg from './SuccessMsg.jsx';
+import SocialMedia from './SocialMedia.jsx';
 
 class App extends Component {
     constructor(props) {
@@ -37,15 +38,16 @@ class App extends Component {
         
         if(forum === 'home') {
             return (
-                <div>
+                <div style={style}> 
                     <Header/>
                     <Pic handleForumChange={() => this.handleForumChange()}/>
+                    <SocialMedia />
                 </div>
             )
         }
         if(forum === 'form') {
             return(
-                <div>
+                <div style={style}>
                     <Header />
                     <Form handleFormSent={() => this.handleFormSent()}/>
                 </div>
@@ -53,7 +55,7 @@ class App extends Component {
         }
         if(forum === 'congrats') {
             return(
-                <div>
+                <div style={style}>
                     <Header />
                     <SuccessMsg handleHome={() => this.handleHome()}/>
                 </div>
@@ -61,6 +63,10 @@ class App extends Component {
         }
         
     }
+}
+
+const style = {
+    backgroundColor: '#fafafa'
 }
 
 export default App;
