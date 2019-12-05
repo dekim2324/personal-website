@@ -6,6 +6,7 @@ import SuccessMsg from './SuccessMsg.jsx';
 import SocialMedia from './SocialMedia.jsx';
 import Projects from './Projects.jsx';
 import TitleProject from './TitleProject.jsx';
+import Copyright from './Copyright.jsx';
 
 class App extends Component {
     constructor(props) {
@@ -46,6 +47,7 @@ class App extends Component {
                     <SocialMedia />
                     <TitleProject />
                     <Projects />
+                    <Copyright />
                 </div>
             )
         }

@@ -75,5 +75,14 @@
   }
 
   .card-img-top {
-    cursor: pointer
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .card-img-top:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .fa-copyright {
+    transform: scale(0.7,0.7)
   }
