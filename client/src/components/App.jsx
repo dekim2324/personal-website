@@ -4,6 +4,8 @@ import Pic from './Pic.jsx';
 import Form from './Form.jsx';
 import SuccessMsg from './SuccessMsg.jsx';
 import SocialMedia from './SocialMedia.jsx';
+import Projects from './Projects.jsx';
+import TitleProject from './TitleProject.jsx';
 
 class App extends Component {
     constructor(props) {
@@ -42,6 +44,8 @@ class App extends Component {
                     <Header/>
                     <Pic handleForumChange={() => this.handleForumChange()}/>
                     <SocialMedia />
+                    <TitleProject />
+                    <Projects />
                 </div>
             )
         }
