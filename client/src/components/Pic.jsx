@@ -6,7 +6,7 @@ class Pic extends Component{
     }
 
     handleResume(e) {
-        window.open('https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/Dennis%20Resume.pdf?alt=media&token=58efae92-9c1d-46d1-8c7d-e9ad3b3b021a', '_blank')
+        window.open('https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/DennisResume.pdf?alt=media&token=b4ef4ce4-eadc-45fd-abc0-3dbb3adac7c9', '_blank')
     }
 
     render() {

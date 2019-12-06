@@ -1,5 +1,11 @@
 import React, { Component, useState } from 'react';
 import { Modal, Button, ButtonToolbar } from 'react-bootstrap';
+import Project1 from './modal/Project1.jsx';
+import Project2 from './modal/Project2.jsx';
+import Project3 from './modal/Project3.jsx';
+import Project4 from './modal/Project4.jsx';
+import Project5 from './modal/Project5.jsx';
+import Project6 from './modal/Project6.jsx';
 
 function Projects() {
     
@@ -94,7 +100,9 @@ function Projects() {
                     iCook365
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>...</Modal.Body>
+                <Modal.Body>
+                    <Project1></Project1>
+                </Modal.Body>
             </Modal>
 
             <Modal
@@ -108,7 +116,9 @@ function Projects() {
                     ShareBnB
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>...</Modal.Body>
+                <Modal.Body>
+                    <Project2></Project2>
+                </Modal.Body>
             </Modal>
 
             <Modal
@@ -122,7 +132,9 @@ function Projects() {
                     Pi-Kea
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>...</Modal.Body>
+                <Modal.Body>
+                    <Project3></Project3>    
+                </Modal.Body>
             </Modal>
 
             <Modal
