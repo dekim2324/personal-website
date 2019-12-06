@@ -148,7 +148,9 @@ function Projects() {
                     Training Tracker
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>...</Modal.Body>
+                <Modal.Body>
+                    <Project4></Project4>
+                </Modal.Body>
             </Modal>
 
             <Modal

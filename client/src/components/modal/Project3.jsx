@@ -4,25 +4,28 @@ function Project1() {
     return(
         <div style={style}>
             <strong>
-                Inspired by food and cooking, this application allows pictures to persist throughout the calendar year.
+                Scaling the backend is crucial when it comes to handling mass amount of users.
+                I took an ecommerce product page, the photo carousel to be exact, and optimized the overall performance.
             </strong>
             
             <div style={space1}></div>
             
             <div>
-               Pictures are a great way to share a part of our lives.  
-               Images are hosted on cloud so they persist seamlessly.
-               User experience enhanced with clean UI and a beautiful calendar to retrieve data.
+               This code-base had no optimization and at the moment only held about 100 data.
+               This means that having more users may slow down the server or even crashing it.
+               The solution is to perform horizontal scaling.
             </div>
 
             <div style={space1}></div>
 
             <div>
-                The front-end is used by React and material UI library for the user experience.
-                The difficult part about the project was finding the most efficient way to handle photos.
-                Because photos will take up big amount of space, there must be a way to find a light-weight option. 
-                The solution I came up with was to host the images on cloud and have the application read only the path to the files.
-                This allowed my application to overcome its biggest obstacle in image handling.
+               The first challenge was to find a database that best fits my service.
+                It does not need to write any data, only need the ability to read files quickly.
+                I decided to benchmark three different databses: Mongo, Cassandra and Postgres. 
+                These numbers are all fast and may not be statistically significant. However here are the results:
+                Mongo & Cassandra querying time was 2-16ms very incosistently. Querying data over 10 million crashed the server.
+                Postgres was consistently under 2ms, most times at 1ms. I believe relational databases are best fit for applications 
+                that only need to read files.
             </div>
 
             <div style={space1}></div>    
@@ -37,10 +40,13 @@ function Project1() {
             <div style={space1}></div>
 
             <div>
-                Other architecture of this application was minor compared to handling of images.
-                Using dates to store and retrieve data from the database was a challenge as well.
-                There were many different date formats. The solution to this was to use a library called moment.js 
-                which makes unifying key / value pairs much more simple. 
+                I implemented simple indexing of postgres database and tested with many virutal users to mimick a real-life situation.
+                The results were as follows: 0% error rate, 1.58 requests per second and 1.8 ms response time. 
+                Currently, I am looking into incorporating a binary search tree to speed up the query time even further.
+                Two further things I am currently researching is caching and load-balancer. 
+                Caching would be the most simple in terms of implementation.
+                Because many products are 'fad' based, we could cache similar product requests and serve up the data that way.
+                Lastly, load-balancer would help efficiently distribute the workload on different servers.
             </div>
 
             <div style={space1}></div>
@@ -53,7 +59,7 @@ function Project1() {
             <div style={space1}></div>
 
             <div>
-                Technologies used: <i>Javascript, React.js, Express, Firebase / Cloud Storage / Firestore, Webpack, Babel, moment.js, Material UI </i>
+                Technologies used: <i>Javascript, React.js, Express, Postgresql, Node.js, New Relic, K6, AWS EC2, Webpack, Babel </i>
             </div>
 
             <div style={space1}></div>
