@@ -4,35 +4,57 @@ function Project5() {
     return(
         <div style={style}>
             <strong>
-                Inspired by food and cooking, this application allows pictures to persist throughout the calendar year.
+                It is a minimalistic application fetching data for twitter feed.
+                The focus is on using API with emphasis on design.
             </strong>
             
             <div style={space1}></div>
             
             <div>
-               Pictures are a great way to share a part of our lives.  
+               A big focus is implementing API and some CSS. 
+               In order to give the user and great experience, time was spent on animations and effects using CSS.
+               The result is a beautiful twiddler application.
             </div>
 
             <div style={space1}></div>
 
-            
+            <div>
+               The logical data to show to the clients is the most up-to date newsfeed. 
+               In order to accomplish that, I needed to fetch the data using API and retrieve it according to the latest news.
+               I was able to accomplish that by filtering through and showing the 10 most recent news. 
+            </div>
+
+            <div style={space1}></div>    
+
+
             <img 
-                src='https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/Screen%20Shot%202019-12-04%20at%207.45.44%20PM.png?alt=media&token=523fe748-e415-435d-a251-2bc342025ada'
+                src='https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/twiddler(1).png?alt=media&token=ed6ea4c3-d49b-41cc-9288-82f237c2910b'
+                style={img}
+                />
+
+            
+            <div style={space1}></div>
+
+            <div>
+                I love to work on CSS as making any application look great is my passion.
+                The pink color just gives such a great contrast and gives it a different flavor.
+                This was a fun project to do using lots of effects via CSS.
+            </div>
+
+            <div style={space1}></div>
+
+            <img 
+                src='https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/twiddler(2).png?alt=media&token=0cbbedfa-b469-46cb-9f44-5870652f7233'
                 style={img}
                 />
 
             <div style={space1}></div>
 
             <div>
-                Technologies used: <i>hello</i>
+                Technologies used: <i>Javascript, jQuery, CSS, HTML, Data API  </i>
             </div>
 
             <div style={space1}></div>
-
-            <img 
-                src='https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/Screen%20Shot%202019-12-05%20at%209.43.42%20AM.png?alt=media&token=e8e5ea25-2bf4-45f0-a8b7-eb1e0efdd0a8'
-                style={img}
-                />
 
         </div>
     )

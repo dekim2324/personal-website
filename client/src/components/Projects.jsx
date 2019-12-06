@@ -164,7 +164,9 @@ function Projects() {
                     Twiddler
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>...</Modal.Body>
+                <Modal.Body>
+                    <Project5></Project5>
+                </Modal.Body>
             </Modal>
 
             <Modal
@@ -178,7 +180,9 @@ function Projects() {
                     Dennis Personal Web
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>...</Modal.Body>
+                <Modal.Body>
+                    <Project6></Project6>
+                </Modal.Body>
             </Modal>
 
         </div>
