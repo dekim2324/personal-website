@@ -2,7 +2,7 @@ import React from 'react';
 
 function SocialMedia(props) {
     return (
-        <div style={style}>
+        <div style={style} id='social'>
             
             <i 
             className="social fab fa-linkedin fa-2x"

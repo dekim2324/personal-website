@@ -20,7 +20,7 @@ function Projects() {
         <div style={style}>
 
             <div style={container1}>
-                <div className="card" style={{width: "25rem"}}>
+                <div className="card" style={card}>
                     <img 
                     onClick={() => setLgShow(true)}
                     src="https://firebasestorage.googleapis.com/v0/b/mvp-360.appspot.com/o/Screen%20Shot%202019-12-04%20at%207.45.44%20PM.png?alt=media&token=523fe748-e415-435d-a251-2bc342025ada" 
@@ -29,7 +29,7 @@ function Projects() {
                     
                     />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">A beautifully designed application built so that you can log and share photos of the foods you cook</p>
                     </div>
                 </div>
                 <div className="card" style={{width: "25rem"}}>
@@ -39,7 +39,7 @@ function Projects() {
                     className="card-img-top" 
                     alt="..." />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">A platform designed for seamless lodging-arrangements</p>
                     </div>
                 </div>
                 <div className="card" style={{width: "25rem"}}>
@@ -49,7 +49,7 @@ function Projects() {
                     className="card-img-top" 
                     alt="..." />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">Online-shopping legacy code - scaled the backend to handle millions of data and users</p>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@ function Projects() {
                     className="card-img-top" 
                     alt="..." />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">A comprehensive exercise planner that allows users to create and save custom workout-plans</p>
                     </div>
                 </div>
                 <div className="card" style={{width: "25rem"}}>
@@ -73,7 +73,7 @@ function Projects() {
                     className="card-img-top" 
                     alt="..." />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">Using API to display twitter news feeds</p>
                     </div>
                 </div>
                 <div className="card" style={{width: "25rem"}}>
@@ -83,7 +83,7 @@ function Projects() {
                     className="card-img-top" 
                     alt="..." />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">Personal website!</p>
                     </div>
                 </div>
             </div>
@@ -208,5 +208,9 @@ const container2 = {
     marginTop: '70px'
 }
 
+const card = {
+    width: "25rem"
+    // border: '1px solid black'
+}
 
 export default Projects;

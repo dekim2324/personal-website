@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navs from './Navs.jsx';
 
 class Header extends Component {
     constructor() {
@@ -12,7 +13,7 @@ class Header extends Component {
                 <div style={name}>Hey! 👋 I'm</div>
                 
                 <div className='animated-text'>    
-                    <div className='line'>Korean-American</div>
+                    <div className='line'>building cool things</div>
                     <div className='line'>a fullstack developer</div>
                     <div className='line'>a software engineer</div>
                 </div>

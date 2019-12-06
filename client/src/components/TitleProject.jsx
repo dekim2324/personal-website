@@ -2,7 +2,7 @@ import React from 'react';
 
 function TitleProject() {
     return(
-        <div style={style}>
+        <div style={style} id='projects'>
             <div>Projects</div>
             <div style={more}>Click on images for more info</div>
         </div>

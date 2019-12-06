@@ -62,21 +62,17 @@
     cursor: pointer
   }
 
-  .card {
-    width: 70%;
-  }
-
   .carousel{
     width: 50%;
   }
 
   .card-body {
-    background-color: bisque
+    background-color: #ddd;
   }
 
   .card-img-top {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.4;
   }
   .card-img-top:hover {
     cursor: pointer;
@@ -86,3 +82,14 @@
   .fa-copyright {
     transform: scale(0.7,0.7)
   }
+
+  .nav-link {
+    color: black
+  }
+
+  .card-text {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+

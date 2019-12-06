@@ -19,7 +19,7 @@ class Pic extends Component{
                 <h5 style={location}>Austin, TX | Dennis Kim</h5>
 
                 <div> Building software is my passion. I am constantly blown away by new technology. </div>
-                <div> Interests in basketball (Dallas Mavericks), cooking, eating fatty foods, and traveling. </div>
+                <div> Interests in basketball (Mavericks, LBJ), cooking, eating fatty foods, and traveling. </div>
 
                 <div style={container2}>
                     <button 
